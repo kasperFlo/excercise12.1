@@ -1,0 +1,29 @@
+<ng-container *ngIf=" employee !== undefined  ; else not_found">
+
+  <div class="table-custom-card">
+      <div>
+        <img [src]='employee.picture' class='image'>
+      </div>
+
+      <div class="employeeInfo">
+        <h2 class="employee_label">{{employee.firstName}} {{employee.lastName}}</h2>
+
+        <span class="employee_label">This Employee : {{employee.witch ? "is a witch " : "is not a witch"}}</span>
+        <span class="employee_label">Salary : {{employee.salary}}</span>
+      </div>
+
+
+      <div class="employeeInfo">
+        <h2 class="employee_label">Contacts:</h2>
+        <span class="employee_label">phone Number  : {{employee.phoneNumber}}:</span>
+        <span class="employee_label">email : {{employee.emailAddress}}:</span>
+      </div>
+  </div>
+
+</ng-container>
+<ng-template #not_found>
+  <p class="message">
+    The data is not found.
+  </p>
+</ng-template>
+
