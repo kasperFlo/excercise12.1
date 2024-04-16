@@ -5,22 +5,22 @@ import {HttpClient} from "@angular/common/http";
 import {PetDataService} from "../pet-data.service";
 
 @Component({
-  selector: 'app-employee-details',
-  templateUrl: './employee-details.component.html',
-  styleUrl: './employee-details.component.css'
+  selector: 'app-pet-details',
+  templateUrl: './pet-details.component.html',
+  styleUrl: './pet-details.component.css'
 })
 
-export class EmployeeDetailsComponent implements OnDestroy{
+export class PetDetailsComponent implements OnDestroy{
 
   pet : Pet | undefined;
   petSub : Subscription | undefined;
 
   givenURL = "http://tetervak.dev.fast.sheridanc.on.ca/exams/angular/data/p20082.json"
 
-  constructor(employeeDataService : PetDataService) {
+  constructor(petDataService : PetDataService) {
 
-    this.petSub = employeeDataService.getPetByUrl(this.givenURL)
-      .subscribe(employee => this.pet = employee);
+    this.petSub = petDataService.getPetByUrl(this.givenURL)
+      .subscribe(pet => this.pet = pet);
   }
 
   ngOnDestroy() {

@@ -32,8 +32,8 @@ export class PetDataService {
 
   public getPetByUrl(url: string): Observable<Pet | undefined> {
     return this.http.get<PetJson>(url).pipe(
-      map(employee => {
-        return PetDataService.json2Employee(employee);
+      map(pet => {
+        return PetDataService.json2Employee(pet);
       })
     );
   }

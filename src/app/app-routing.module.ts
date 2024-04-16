@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {EmployeeDetailsComponent} from "./pet-details/employee-details.component";
+import {PetDetailsComponent} from "./pet-details/pet-details.component";
 
 const routes: Routes = [
-  {path: '', component: EmployeeDetailsComponent},
+  {path: '', component: PetDetailsComponent},
   {path: '**', redirectTo: ''},
 
 ];

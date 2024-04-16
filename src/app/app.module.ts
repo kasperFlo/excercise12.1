@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { EmployeeDetailsComponent } from './pet-details/employee-details.component';
+import { PetDetailsComponent } from './pet-details/pet-details.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatToolbar} from "@angular/material/toolbar";
@@ -13,7 +13,7 @@ import {MatToolbar} from "@angular/material/toolbar";
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeDetailsComponent,
+    PetDetailsComponent,
     HeaderComponent,
     FooterComponent
   ],
