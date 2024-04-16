@@ -1,45 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.table-custom-card {
-  width: 45em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--gray-900);
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.2);
-
-  margin: 0.5em;
-}
-
-.employeeInfo {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  padding-left: 3em;
-  width: auto;
-  flex-wrap: wrap;
-}
-
-.employee_label{
-  color: var(--gray-900);
-  padding-right: 1em;
-}
-
-.image {
-  width: 300px;
-  height: auto;
-  /*margin-right: 10px;*/
-  margin-bottom: 5px;
-  margin-top: 5px;
-  box-shadow: 8px 8px 8px rgba(12, 166, 203, 0.5);
-}
-
 :host {
   --bright-blue: oklch(51.01% 0.274 263.83);
   --electric-violet: oklch(53.18% 0.28 296.97);
@@ -72,5 +31,47 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.table-custom-card {
+  width: 45em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.2);
+
+  margin: 0.5em;
+}
+
+.employeeInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding-left: 3em;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+.employee_label{
+  color: rgba(255,255,255,0.84);
+  padding-right: 1em;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+  /*margin-right: 10px;*/
+  margin-bottom: 5px;
+  margin-top: 5px;
+  box-shadow: 8px 8px 8px rgba(12, 166, 203, 0.5);
 }
 
